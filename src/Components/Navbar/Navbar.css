@@ -17,9 +17,9 @@
 .nav-connect{
     padding: 15px 20px;
     border-radius: 30px;
-    background: linear-gradient(267deg, #89da25 0.36%, #bee123 102.06%);
+    background: linear-gradient(267deg, #282727 0.36%, #1c1e1c 102.06%);
     font-size: 15px;
-    color: #1f1f1f;
+    color: #e9e7e7;
     cursor: pointer;
     transition: 0.5s;
 }

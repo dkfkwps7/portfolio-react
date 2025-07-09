@@ -4,3 +4,43 @@
     flex-direction: column;
     gap: 35px;
 }
+
+.hero img{
+    width: 200px;
+    border-radius: 50%;
+    margin-top: 60px;
+}
+
+.text-2xl{
+    width: 50%;
+    font-size: 45px;
+    font-weight: 600;
+    margin-bottom: -20px;
+}
+
+.hero p{
+    width: 50%;
+    text-align: center;
+}
+.hero-action{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+.hero-connect{
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: 1px solid #8efc44;
+    background: linear-gradient(267deg, #282727 0.36%, #1c1e1c 102.06%);
+    cursor: pointer;
+}
+.hero-resume{
+    padding: 10px 25px;
+    border-radius: 30px;
+    border: 1px solid #8efc44;
+    background: linear-gradient(267deg, #282727 0.36%, #1c1e1c 102.06%);
+    cursor: pointer;
+}

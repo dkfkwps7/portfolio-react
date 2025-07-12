@@ -4,6 +4,13 @@
     flex-direction: column;
     gap: 35px;
 }
+.hero-h1{
+    display: flex;
+    align-items: center;
+}
+.hero text{
+    cursor: none;
+}
 
 .hero img{
     width: 200px;
@@ -18,9 +25,10 @@
     margin-bottom: -20px;
 }
 
-.hero p{
+.hero-p{
     width: 50%;
     text-align: center;
+    line-height: 30px;
 }
 .hero-action{
     display: flex;
@@ -30,17 +38,57 @@
     font-weight: 500;
     margin-bottom: 40px;
 }
-.hero-connect{
-    padding: 10px 20px;
-    border-radius: 30px;
-    border: 1px solid #8efc44;
-    background: linear-gradient(267deg, #282727 0.36%, #1c1e1c 102.06%);
-    cursor: pointer;
-}
 .hero-resume{
     padding: 10px 25px;
-    border-radius: 30px;
-    border: 1px solid #8efc44;
-    background: linear-gradient(267deg, #282727 0.36%, #1c1e1c 102.06%);
+   outline: none;
+    color: #fff;
+    background: #111;
     cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 30px;
+}
+.hero-resume:before{
+    content: '';
+    background: linear-gradient(45deg, #c3fc3c, #3cfc4c);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 30px;
+}
+.hero-resume:active{
+    color: #000
+}
+.hero-resume:active::after{
+    background: transparent;
+}
+.hero-resume:active::before{
+    opacity: 1;
+}
+.hero-resume:hover::before{
+    opacity: 1;
+}
+.hero-resume:after{
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 30px;
+}
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
 }

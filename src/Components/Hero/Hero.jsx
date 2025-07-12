@@ -11,7 +11,7 @@ const handleAnimationComplete = () => {
 const Hero = () => {
   return (
     <div className='hero'>
-      <img src={profile_img} alt="" />
+      {/* <img src={profile_img} alt="" /> */}
       <SplitText
         text="I'm Arragen Basilio"
         className="text-2xl font-semibold text-center"
@@ -25,15 +25,12 @@ const Hero = () => {
         rootMargin="-100px"
         textAlign="center"
         onLetterAnimationComplete={handleAnimationComplete} />
-      <p>Seeking a career with a progressive organization that provides an opportunity to
+      <div className="hero-p">
+        <p>Seeking a career with a progressive organization that provides an opportunity to
         capitalize my technical skills and abilities in the field of Information Technology.</p>
+      </div>
       <div className="hero-action">
-        <div className="hero-connect">
-          <ShinyText text="Connect with me" disabled={false} speed={2} className='custom-class' />
-        </div>
-        <div className="hero-resume">
-          <ShinyText text="My Resume" disabled={false} speed={2} className='custom-class' />
-        </div>
+        <div className="hero-resume">Download CV</div>
       </div>
     </div>
   )

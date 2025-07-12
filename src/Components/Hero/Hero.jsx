@@ -2,7 +2,6 @@ import React from 'react'
 import './Hero.css'
 import profile_img from '../../assets/profile_img.svg'
 import SplitText from '../../../Reactbits/SplitText/SplitText';
-import ShinyText from '../../../Reactbits/ShinyText/ShinyText';
 
 const handleAnimationComplete = () => {
   console.log('All letters have animated!');
@@ -11,7 +10,6 @@ const handleAnimationComplete = () => {
 const Hero = () => {
   return (
     <div className='hero'>
-      {/* <img src={profile_img} alt="" /> */}
       <SplitText
         text="I'm Arragen Basilio"
         className="text-2xl font-semibold text-center"
@@ -26,8 +24,7 @@ const Hero = () => {
         textAlign="center"
         onLetterAnimationComplete={handleAnimationComplete} />
       <div className="hero-p">
-        <p>Seeking a career with a progressive organization that provides an opportunity to
-        capitalize my technical skills and abilities in the field of Information Technology.</p>
+        <p>A passionate Information Technology professional and recent graduate with a drive for innovation and excellence in the tech industry.</p>
       </div>
       <div className="hero-action">
         <div className="hero-resume">Download CV</div>

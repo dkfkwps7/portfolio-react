@@ -1,6 +1,6 @@
 import React from 'react'
 import './Hero.css'
-import profile_img from '../../assets/profile_img.svg'
+import profile_img1 from '../../assets/profile_img1.svg'
 import SplitText from '../../../Reactbits/SplitText/SplitText';
 
 const handleAnimationComplete = () => {
@@ -10,8 +10,9 @@ const handleAnimationComplete = () => {
 const Hero = () => {
   return (
     <div className='hero'>
+      <img src={profile_img1} alt="" />
       <SplitText
-        text="I'm Arragen Basilio"
+        text="Arragen Basilio"
         className="text-2xl font-semibold text-center"
         delay={100}
         duration={0.7}

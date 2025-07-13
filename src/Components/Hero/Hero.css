@@ -1,5 +1,5 @@
 .hero {
-    margin: 15% 10%;
+    margin: 5% 10%;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -7,9 +7,8 @@
 }
 
 .hero img {
-    width: 200px;
+    width: 250px;
     border-radius: 50%;
-    margin-top: 60px;
 }
 
 .text-2xl {

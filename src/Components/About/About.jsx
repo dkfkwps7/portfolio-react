@@ -1,7 +1,6 @@
 import React from 'react'
 import './About.css'
 import profile_img from '../../assets/profile_img.svg'
-import GlareHover from './../../../Reactbits/GlareHover/GlareHover';
 import AnimatedContent from './../../../Reactbits/AnimatedContent/AnimatedContent';
 import html_img from '../../assets/html.svg'
 import css_img from '../../assets/css.svg'
@@ -9,6 +8,7 @@ import reactjs_img from '../../assets/reactjs.svg'
 import js_img from '../../assets/js.svg'
 import php_img from '../../assets/php.svg'
 import ScrollFloat from './../../../Reactbits/ScrollFloat/ScrollFloat';
+import { Tooltip } from 'react-tooltip'
 
 
 const About = () => {
@@ -60,10 +60,13 @@ const About = () => {
                             threshold={0.1}
                             delay={0}
                         >
-                            <div className="about-skill">
+                            <div className="about-skill html">
                                 <div className="skill-img">
                                     <img src={html_img} alt="" />
                                 </div>
+                                <Tooltip anchorSelect=".html" place="left" className="custom-tooltip">
+                                    HTML
+                                </Tooltip>
                                 <hr style={{ width: "70%" }} />
                             </div>
                         </AnimatedContent>
@@ -79,10 +82,13 @@ const About = () => {
                             threshold={0.1}
                             delay={0}
                         >
-                            <div className="about-skill">
+                            <div className="about-skill css">
                                 <div className="skill-img">
                                     <img src={css_img} alt="" />
                                 </div>
+                                <Tooltip anchorSelect=".css" place="left" className="custom-tooltip">
+                                    CSS
+                                </Tooltip>
                                 <hr style={{ width: "70%" }} />
                             </div>
                         </AnimatedContent>
@@ -98,10 +104,13 @@ const About = () => {
                             threshold={0.1}
                             delay={0}
                         >
-                            <div className="about-skill">
+                            <div className="about-skill reactjs">
                                 <div className="skill-img">
                                     <img src={reactjs_img} alt="" />
                                 </div>
+                                <Tooltip anchorSelect=".reactjs" place="left" className="custom-tooltip">
+                                    React JS
+                                </Tooltip>
                                 <hr style={{ width: "40%" }} />
                             </div>
                         </AnimatedContent>
@@ -117,10 +126,13 @@ const About = () => {
                             threshold={0.1}
                             delay={0}
                         >
-                            <div className="about-skill">
+                            <div className="about-skill js">
                                 <div className="skill-img">
                                     <img src={js_img} alt="" />
                                 </div>
+                                <Tooltip anchorSelect=".js" place="left" className="custom-tooltip">
+                                    JavaScript
+                                </Tooltip>
                                 <hr style={{ width: "50%" }} />
                             </div>
                         </AnimatedContent>
@@ -136,17 +148,20 @@ const About = () => {
                             threshold={0.1}
                             delay={0}
                         >
-                            <div className="about-skill">
+                            <div className="about-skill php">
                                 <div className="skill-img">
                                     <img src={php_img} alt="" />
                                 </div>
+                                <Tooltip anchorSelect=".php" place="left" className="custom-tooltip">
+                                    PHP
+                                </Tooltip>
                                 <hr style={{ width: "65%" }} />
                             </div>
                         </AnimatedContent>
                     </div>
                 </div>
             </div>
-            
+
             <div className="about-achievements">
                 <div className="about-achievement">
                     <h1> ICT (TECH-VOC) - Senior High School  (2019 – 2021)</h1>
